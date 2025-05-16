@@ -7520,10 +7520,10 @@ a.anchor-link {
 <h1 id="Heaps"><strong>Heaps</strong><a class="anchor-link" href="#Heaps">¶</a></h1><p>A heap is a tree-based data structure that satisfies the <strong>heap property</strong>:</p>
 <ul>
 <li><p>In a <strong>min-heap</strong>, each parent node is no <strong>greater</strong> than its children.</p>
-<p>  $P &lt;= C \quad \forall \ \text{children} \ C \ \text{of} \ P$</p>
+<p>  $P \le C \quad \forall \ \text{children} \ C \ \text{of} \ P$</p>
 </li>
 <li><p>In a <strong>max-heap</strong>, each parent node is no <strong>less than</strong> its children.</p>
-<p>  $P &gt;= C \quad \forall \ \text{children} \ C \ \text{of} \ P$</p>
+<p>  $P \ge C \quad \forall \ \text{children} \ C \ \text{of} \ P$</p>
 </li>
 </ul>
 <blockquote>
@@ -7592,7 +7592,7 @@ graph TD
 <li><p><code>60</code> is <code>i=6</code></p>
 </li>
 </ul>
-<h4 id="Why-2i-+-1-and-2i-+-2-Work">Why <code>2i + 1</code> and <code>2i + 2</code> Work<a class="anchor-link" href="#Why-2i-+-1-and-2i-+-2-Work">¶</a></h4><ul>
+<h3 id="Why-2i-+-1-and-2i-+-2-Work">Why <code>2i + 1</code> and <code>2i + 2</code> Work<a class="anchor-link" href="#Why-2i-+-1-and-2i-+-2-Work">¶</a></h3><ul>
 <li><p>A node <code>cur</code> at index <code>i</code> has exactly <code>i</code> nodes before it in the tree</p>
 </li>
 <li><p>Since the tree is complete, all the nodes before <code>cur</code> have 2 children</p>
